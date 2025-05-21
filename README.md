@@ -288,6 +288,52 @@ The Blog Editor application effectively balances **performance**, **usability**,
 
 ---
 
+
+## 🖥️ For the **Frontend** (e.g., in `vite-project` or similar folder)
+
+```bash
+cd vite-project
+npm install
+npm run dev
+```
+
+* `cd vite-project`: Go into the frontend folder.
+* `npm install`: Installs all dependencies listed in `package.json`.
+* `npm run dev`: Starts the Vite dev server (usually at `http://localhost:5173`).
+
+---
+
+## ⚙️ For the **Backend** (e.g., in `backend` or `server` folder)
+
+```bash
+cd backend
+npm install
+npm run dev
+```
+
+* `cd backend`: Go into the backend folder.
+* `npm install`: Installs backend dependencies like Express, Mongoose, etc.
+* `npm run dev`: Starts the backend server (usually on `http://localhost:5000` or similar).
+
+> ⚠️ You can replace `npm run dev` with whatever script you're using (e.g., `node index.js` or `nodemon server.js`) — depends on your `package.json`.
+
+---
+
+## 🔐 Optional: Add `.env.example`
+
+If your backend needs environment variables (e.g., for database, JWT keys), include a `.env.example` file to show users what they need to define.
+
+Example:
+
+```env
+MONGO_URI=your_mongodb_connection_string
+JWT_SECRET=your_secret_key
+PORT=5000
+```
+
+---
+
+
 ## 🔗 Links
 
 * **GitHub Repository**: [GitHub.com/YourUsername/BlogEditorApp](https://github.com/YourUsername/BlogEditorApp)
